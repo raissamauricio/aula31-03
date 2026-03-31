@@ -1,0 +1,273 @@
+[2026-03-31 11:09:47] local.ERROR: Command "make:livewire" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:livewire\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php:704)
+[stacktrace]
+#0 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(260): Symfony\\Component\\Console\\Application->find('make:livewire')
+#1 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Aluno\\exemplolaravel\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2026-03-31 12:13:14] local.ERROR: Invalid route action: [Illuminate\Auth\Events\Login]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [Illuminate\\Auth\\Events\\Login]. at C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('Illuminate\\\\Auth...')
+#1 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(192): Illuminate\\Routing\\RouteAction::parse('login', Array)
+#2 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(173): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(669): Illuminate\\Routing\\Route->__construct(Array, 'login', Array)
+#4 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(561): Illuminate\\Routing\\Router->newRoute(Array, 'login', Array)
+#5 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(541): Illuminate\\Routing\\Router->createRoute(Array, '/login', Array)
+#6 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(159): Illuminate\\Routing\\Router->addRoute(Array, '/login', 'Illuminate\\\\Auth...')
+#7 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(357): Illuminate\\Routing\\Router->get('/login', 'Illuminate\\\\Auth...')
+#8 C:\\Users\\Aluno\\exemplolaravel\\routes\\web.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\Aluno\\\\...')
+#10 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(511): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\Aluno\\\\...')
+#11 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(465): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\Aluno\\\\...')
+#12 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(194): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\Aluno\\\\...')
+#13 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(206): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\Aluno\\\\...')
+#14 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#15 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(126): Illuminate\\Container\\Container->call(Object(Closure))
+#27 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1106): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1084): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 24)
+#30 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1083): array_walk(Array, Object(Closure))
+#31 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(309): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(470): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(194): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Aluno\\exemplolaravel\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#37 {main}
+"} 
+[2026-03-31 12:14:20] local.ERROR: Invalid route action: [Illuminate\Auth\Events\Login]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [Illuminate\\Auth\\Events\\Login]. at C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('Illuminate\\\\Auth...')
+#1 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(192): Illuminate\\Routing\\RouteAction::parse('login', Array)
+#2 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(173): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(669): Illuminate\\Routing\\Route->__construct(Array, 'login', Array)
+#4 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(561): Illuminate\\Routing\\Router->newRoute(Array, 'login', Array)
+#5 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(541): Illuminate\\Routing\\Router->createRoute(Array, '/login', Array)
+#6 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(159): Illuminate\\Routing\\Router->addRoute(Array, '/login', 'Illuminate\\\\Auth...')
+#7 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(357): Illuminate\\Routing\\Router->get('/login', 'Illuminate\\\\Auth...')
+#8 C:\\Users\\Aluno\\exemplolaravel\\routes\\web.php(6): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Users\\\\Aluno\\\\...')
+#10 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(511): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\Aluno\\\\...')
+#11 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(465): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\Aluno\\\\...')
+#12 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(194): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\Aluno\\\\...')
+#13 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(206): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\Aluno\\\\...')
+#14 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#15 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(126): Illuminate\\Container\\Container->call(Object(Closure))
+#27 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1106): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1084): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 24)
+#30 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1083): array_walk(Array, Object(Closure))
+#31 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(309): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(470): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(194): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 C:\\Users\\Aluno\\exemplolaravel\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#37 {main}
+"} 
+[2026-03-31 13:33:04] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@test.com' for key 'users_email_unique' (Connection: mysql, SQL: insert into `users` (`name`, `email`, `password`, `cargo`, `updated_at`, `created_at`) values (admin, admin@test.com, $2y$12$MF.olHZohSLytsetl37nYupSirn8CqObhzliuS.eUDQ5Byrjsi/KS, admin, 2026-03-31 13:33:04, 2026-03-31 13:33:04)) {"exception":"[object] (Illuminate\\Database\\UniqueConstraintViolationException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@test.com' for key 'users_email_unique' (Connection: mysql, SQL: insert into `users` (`name`, `email`, `password`, `cargo`, `updated_at`, `created_at`) values (admin, admin@test.com, $2y$12$MF.olHZohSLytsetl37nYupSirn8CqObhzliuS.eUDQ5Byrjsi/KS, admin, 2026-03-31 13:33:04, 2026-03-31 13:33:04)) at C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:808)
+[stacktrace]
+#0 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#1 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('insert into `us...', Array, Object(Closure))
+#2 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(524): Illuminate\\Database\\Connection->statement('insert into `us...', Array)
+#3 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `us...', Array)
+#4 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3659): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `us...', Array, 'id')
+#5 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(2026): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#6 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1338): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#7 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1303): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#8 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1142): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#9 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1069): Illuminate\\Database\\Eloquent\\Model->save()
+#10 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(363): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\User))
+#11 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1068): tap(Object(App\\Models\\User), Object(Closure))
+#12 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#13 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2340): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#14 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2352): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#15 C:\\Users\\Aluno\\exemplolaravel\\database\\seeders\\UserSeeder.php(24): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#16 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\UserSeeder->run()
+#17 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#18 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#19 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#20 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#21 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#22 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#23 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#24 C:\\Users\\Aluno\\exemplolaravel\\database\\seeders\\DatabaseSeeder.php(18): Illuminate\\Database\\Seeder->call('Database\\\\Seeder...')
+#25 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#26 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#27 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#28 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#29 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#30 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#31 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#32 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#33 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#34 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(69): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#35 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#36 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#37 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#38 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#39 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#40 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#41 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#42 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#43 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#44 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#45 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#46 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#47 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#48 C:\\Users\\Aluno\\exemplolaravel\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#49 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@test.com' for key 'users_email_unique' at C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:571)
+[stacktrace]
+#0 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(571): PDOStatement->execute()
+#1 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(800): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('insert into `us...', Array)
+#2 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(767): Illuminate\\Database\\Connection->runQueryCallback('insert into `us...', Array, Object(Closure))
+#3 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(560): Illuminate\\Database\\Connection->run('insert into `us...', Array, Object(Closure))
+#4 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(524): Illuminate\\Database\\Connection->statement('insert into `us...', Array)
+#5 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php(32): Illuminate\\Database\\Connection->insert('insert into `us...', Array)
+#6 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3659): Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId(Object(Illuminate\\Database\\Query\\Builder), 'insert into `us...', Array, 'id')
+#7 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(2026): Illuminate\\Database\\Query\\Builder->insertGetId(Array, 'id')
+#8 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1338): Illuminate\\Database\\Eloquent\\Builder->__call('insertGetId', Array)
+#9 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1303): Illuminate\\Database\\Eloquent\\Model->insertAndSetId(Object(Illuminate\\Database\\Eloquent\\Builder), Array)
+#10 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1142): Illuminate\\Database\\Eloquent\\Model->performInsert(Object(Illuminate\\Database\\Eloquent\\Builder))
+#11 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1069): Illuminate\\Database\\Eloquent\\Model->save()
+#12 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(363): Illuminate\\Database\\Eloquent\\Builder->Illuminate\\Database\\Eloquent\\{closure}(Object(App\\Models\\User))
+#13 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1068): tap(Object(App\\Models\\User), Object(Closure))
+#14 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#15 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2340): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#16 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2352): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#17 C:\\Users\\Aluno\\exemplolaravel\\database\\seeders\\UserSeeder.php(24): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#18 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\UserSeeder->run()
+#19 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#22 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#23 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#24 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#25 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#26 C:\\Users\\Aluno\\exemplolaravel\\database\\seeders\\DatabaseSeeder.php(18): Illuminate\\Database\\Seeder->call('Database\\\\Seeder...')
+#27 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#28 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#29 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#30 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#31 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#32 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#33 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#34 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#35 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#36 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\SeedCommand.php(69): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#37 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#38 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#39 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#40 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#41 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#42 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(212): Illuminate\\Container\\Container->call(Array)
+#43 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Command\\Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#44 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#45 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(1049): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#46 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(318): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#47 C:\\Users\\Aluno\\exemplolaravel\\vendor\\symfony\\console\\Application.php(169): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#48 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(196): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#49 C:\\Users\\Aluno\\exemplolaravel\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1187): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#50 C:\\Users\\Aluno\\exemplolaravel\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#51 {main}
+"} 
